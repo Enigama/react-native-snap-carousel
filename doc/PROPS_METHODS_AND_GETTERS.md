@@ -113,6 +113,16 @@ In order to use the following methods, you need to create a reference to the car
 // methods can then be called this way
 onPress={() => { this._carousel.snapToNext(); }}
 ```
+### ref in functional component
+```javascript
+<Carousel
+  // other props
+  ref={_carousel}
+/>
+
+// methods can then be called this way
+onPress={() => { _carousel.current.snapToNext(); }}
+```
 
 #### ref as a string attribute ([legacy](http://stackoverflow.com/questions/37468913/why-ref-string-is-legacy))
 ```javascript
